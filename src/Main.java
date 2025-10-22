@@ -16,7 +16,7 @@ class Main {
        Hello hello = name -> System.out.println("Hello, " + name + "!");
        hello.sayHello("Zidan");
        hello.greet("Zidan");
-       list.stream().forEach(System.out::println);
+       list.stream().map(i -> i*i).sorted((a, b) -> b - a).forEach(System.out::println);
     }
     static void doubleit(int i){
         System.out.println(i*2);
