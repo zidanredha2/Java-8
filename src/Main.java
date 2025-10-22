@@ -10,5 +10,8 @@ class Main {
        villain.act();
        hero.stop();
        villain.stop();
+       Hello hello = name -> System.out.println("Hello, " + name + "!");
+       hello.sayHello("Zidan");
+       hello.greet("Zidan");
     }
 }
